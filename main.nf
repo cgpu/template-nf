@@ -69,11 +69,4 @@ process report {
     """
 }
 
-// Completion notification
 
-workflow.onComplete {
-    def anacondaDir = new File('/home/ubuntu/anaconda3')
-    anacondaDir.deleteDir()
-    def dlBinDir = new File('/home/ubuntu/.dl_binaries')
-    dlBinDir.deleteDir()
-}
